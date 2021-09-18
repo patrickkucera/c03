@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 16:12:20 by pakucera          #+#    #+#             */
-/*   Updated: 2021/09/18 17:34:27 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/09/18 22:53:38 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_strcmp(char *s1, char *s2)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	s1[256] = "asdfgg";
 	char	s2[256] = "asdfg";
@@ -34,3 +34,4 @@ int	main(void)
 	printf("Result: %d\n", ft_strcmp(s1, s2));
 	return (0);
 }
+*/
