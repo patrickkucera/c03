@@ -6,27 +6,26 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 22:55:56 by pakucera          #+#    #+#             */
-/*   Updated: 2021/09/20 17:43:23 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/09/20 17:45:30 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-char	*ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *dest, const char *src)
 {
 	char	*a;
 
-	a = s1;
-	while (*s1 != '\0')
+	a = dest;
+	while (*dest != '\0')
 	{
-		s1++;
+		dest++;
 	}
-	while (*s2 != '\0')
+	while (*src != '\0')
 	{
-		*s1++ = *s2++;
+		*dest++ = *src++;
 	}
-	*s1 = '\0';
 	return (a);
 }
 
