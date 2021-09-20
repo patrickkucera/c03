@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 22:55:56 by pakucera          #+#    #+#             */
-/*   Updated: 2021/09/20 17:36:00 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/09/20 17:41:35 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,11 @@ char	*ft_strcat(char *s1, const char *s2)
 		s1++;
 	}
 	i = 0;
-	while (s2[2] != '\0')
+	while (s2[i] != '\0')
 	{
 		*s1++ = *s2++;
 	}
+	*s1 = '\0';
 	return (a);
 }
 
@@ -40,3 +41,15 @@ char	*ft_strcat(char *s1, const char *s2)
   printf("%s", s1);
   return 0;
 }*/
+
+/*int main(void)
+{
+	char test[256] = "";
+	printf("%s\n", ft_strcat(test, "asdf"));
+	printf("%s\n", ft_strcat(test, ""));
+	printf("%s\n", ft_strcat(test, "zxcv"));
+}*/
+
+/* 
+==== check -e ====
+$expected = "asdf\nasdf\nasdfzxcv\n";*/
