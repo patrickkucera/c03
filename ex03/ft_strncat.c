@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 20:55:55 by pakucera          #+#    #+#             */
-/*   Updated: 2021/09/20 22:44:23 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/09/20 22:45:07 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	char			a;
+	char			*a;
 	unsigned int	i;
 
 	a = dest;
