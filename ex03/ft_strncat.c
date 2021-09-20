@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 20:55:55 by pakucera          #+#    #+#             */
-/*   Updated: 2021/09/20 22:30:33 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/09/20 22:34:11 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,12 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	while (*src && i < nb)
 	{
 		*dest++ = *src++;
-		i++;
+/* 		*dest = *src;
+		dest++;
+		src++; */
+		
 	}
+	*dest = '\0';
 	return (a);
 
 /* 	unsigned int	i;
@@ -51,11 +55,11 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	return (dest); */
 }
 
-/* int	main(void)
+int	main(void)
 {
 	char test[256] = "\0zxcvzxcvzxcvxzcvzxcvzxcv";
 	printf("%s\n", ft_strncat(test, "asdf", 16));
 	printf("%s\n", ft_strncat(test, "", 16));
 	printf("%s\n", ft_strncat(test, "qwerty", 0));
 	printf("%s\n", ft_strncat(test, "asdf", 3));
-} */
+}
