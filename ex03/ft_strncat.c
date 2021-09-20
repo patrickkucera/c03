@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 20:55:55 by pakucera          #+#    #+#             */
-/*   Updated: 2021/09/20 22:38:10 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/09/20 22:39:06 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,34 +27,11 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	while (*src && i < nb)
 	{
 		*dest++ = *src++;
-/* 		*dest = *src;
-		dest++;
-		src++; */
 		i++;
 		
 	}
-	*dest = '\0';
+	//*dest = '\0';
 	return (a);
-
-/* 	unsigned int	i;
-	unsigned int	j;
-
-	i = 0;
-	j = 0;
-
-	while (dest[i])
-	{
-		i++;
-	}
-	//printf("%d", i);
-	while (src[j] && j < nb)
-	{
-		dest[i + j] = src[j];
-		j++;
-	}
-	dest[i + j] = '\0';
-	return (dest); */
-}
 
 /* int	main(void)
 {
