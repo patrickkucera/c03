@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 22:55:56 by pakucera          #+#    #+#             */
-/*   Updated: 2021/09/20 17:08:56 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/09/20 17:36:00 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,19 @@
 char	*ft_strcat(char *s1, const char *s2)
 {
 	char	*a;
+	int		i;
 
 	a = s1;
-	while (*s1)
+	i = 0;
+	while (s1[i] != '\0')
+	{
 		s1++;
-	while (*s1++ == *s2++)
-		;
+	}
+	i = 0;
+	while (s2[2] != '\0')
+	{
+		*s1++ = *s2++;
+	}
 	return (a);
 }
 
