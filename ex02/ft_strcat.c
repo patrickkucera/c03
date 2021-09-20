@@ -6,14 +6,14 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 22:55:56 by pakucera          #+#    #+#             */
-/*   Updated: 2021/09/20 16:59:08 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/09/20 17:06:41 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-char	*my_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	char	*a;
 
