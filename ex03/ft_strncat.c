@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 20:55:55 by pakucera          #+#    #+#             */
-/*   Updated: 2021/09/20 21:56:13 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/09/20 21:56:41 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	{
 		i++;
 	}
-	printf("%d", i);
+	//printf("%d", i);
 	while (src[j] && j <= nb)
 	{
 		dest[i + j] = src[j];
